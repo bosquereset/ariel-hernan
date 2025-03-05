@@ -1,0 +1,1104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+:root{
+    --background:#1c1917ea;
+    --component: #1c1917;   
+
+  /* botones */
+    --button--dark:#fffbeb;
+
+/* borde */
+  --border:#fafaf940;
+
+      /* text-color */
+    --title:#fffbeb;
+    --title-reset:#fffbeb;
+    --subtitle: #fffbeb;
+    --title-light:#fffbeb;
+    --subtitle-light:#fffbeb;
+    --primary-text:#fffbeb;
+    --light-text:#fffbeb;
+
+    /* background dark */
+    --nav--navbar:#1c1917;
+    --header--section:#1c191711;
+    --section--links: #1c191711;
+    --section--about: #1c191711;
+    --section--services: #1c191711;
+    --section--projects: #1c191711;
+    --section--art: #1c191711;
+    --section--livecoding: #1c191711;
+    --section--videoart: #1c191711;
+    --section--contact: #1c191711;
+    --footer--section: #1c191711;
+
+
+       /* text sizes */
+    --h1:3.2rem;
+    --h2:2.3561rem;
+    --h3:1.4562rem;
+    --p:.999rem;
+    --h1-desktop:4.0122rem;
+    --h2-desktop:3.2561rem;
+    --h3-desktop:2.4562rem;
+    --p-desktop:1.1rem;
+    --rounded: .666rem;
+    }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: "Roboto Flex", sans-serif;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    transition: background 0.1s linear;
+    background-color: var(--background);
+}
+
+
+strong{
+    color: var(--light-text);
+    font-weight: 800;
+}
+
+.logo{
+    width: 33%;
+    height: auto;
+    max-width: 240px;
+    padding: 1.2rem;
+}
+
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-family: "Roboto Flex", sans-serif;
+}
+
+h2{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2.4rem;
+    color:var(--primary-text);
+    text-align: center;
+  }
+  
+
+
+img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    border-radius: var(--rounded);
+}
+
+
+button{
+    color:var(--primary-text);
+    border: none;
+    background-color: var(--button--dark);
+}
+
+a button {
+    width: 66%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--p);
+    font-weight: 600;
+    padding: .555rem;
+    justify-content: center;
+    align-items: center;
+    margin: .111rem auto;
+    color: var(--primary-text);
+    border: .01rem solid var(--border);
+}
+
+
+a{
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--p);
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    padding: .666rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: .111rem;
+    transition: .5s;
+    margin: 1.5rem auto;
+    color: var(--primary-text);
+    border: .01rem solid var(--border);
+}
+
+
+
+/* navbar */
+
+nav button{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: transparent;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 64px;
+    padding: 1.2rem;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--background--dark);
+}
+
+
+main{
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+
+/* secciones y articulos */
+
+
+/* secciones separadas y con colores */
+
+.nav--navbar{
+background-color: var(--component);
+}
+
+.header--section{
+width: 100%;
+height: auto;
+height: 640px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin-top:4.8rem;
+position: relative;
+background-color: var(--component);
+}
+
+ .header--card{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--component);
+
+}
+
+.header--section .header--logo{
+    width: 88%;
+    height:auto;
+    border-radius: 1.2rem;
+    padding: 3.33rem;
+}
+
+.header--section .bg-img{
+    width: 100%;
+    min-width: 240px;
+    height:auto;
+    min-width: 1080px;
+    border-radius: 0;
+    opacity: .111;
+}
+
+.header--section h1{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.4rem;
+    color: var(--primary-text);
+    margin: .333rem;
+}
+
+.header--section p{
+    font-size: var(--p);
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--primary-text);
+    padding: .999rem;
+    margin: .333rem;
+}
+
+
+.header--section a{
+    width: 90%;
+    height: auto;
+    color:var(--p);
+    border-radius: .999rem;
+    margin: .666rem auto;
+    padding: 1.2rem;
+    background-color: var(--button);
+    color: var(--primary-text);
+    border: .01rem solid var(--border);
+  }
+
+.header--section .download--cv{
+    color:var(--background--light);
+    background-color: var(--button);
+    border-radius: 1rem;
+    width: 90%;
+    height: auto;
+}
+
+
+
+.about--section{
+width: 100%;
+height: auto;
+padding-top: 2.4rem;
+padding-bottom: 2.4rem;
+background-color: var(--section--about);
+text-align: center;
+}
+
+.about--card{
+display: flex;
+flex-direction: column;
+width: 85%;
+height: auto;
+margin: 2.4rem auto;
+padding-top: 4.8rem;
+padding-bottom: 4.8rem;
+padding-left: 1.2rem;
+padding-right: 1.2rem;
+border-radius: var(--rounded);
+text-align: left;
+justify-content: center;
+align-items: center;
+background-color: var(--component);
+border: .01rem solid var(--border);
+}
+
+.about--me--card{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin: 2.4rem auto;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border-radius: var(--rounded);
+    justify-content: center;
+    align-items: center;
+    background-color: var(--component);
+    }
+
+        .about--me--card h3{
+            font-family: "Roboto Flex", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-size: var(--h3);
+            color: var(--primary-text);
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+            text-align: center;
+        }
+        
+        .about--me--card p{
+            font-family: "Roboto Flex", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: var(--p);
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: auto;
+            color: var(--primary-text);
+        }
+        
+
+
+.about--card h2{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+font-size: var(--h2);
+color: var(--primary-text);
+padding-top: 1.2rem;
+padding-bottom: 1.2rem;
+text-align: center;
+}
+
+.about--card h3{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: var(--h3);
+    color: var(--primary-text);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-align: center;
+}
+
+.about--card p{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: var(--p);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-align: center;
+    color: var(--primary-text);
+}
+
+.about--card a{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: .333rem;
+    margin-bottom: .333rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    background-color: var(--button);
+}
+
+
+.services--section{
+width: 100%;
+height: auto;
+padding-top: 2.4rem;
+padding-bottom: 2.4rem;
+background-color: var(--section--services);
+}
+
+.services--card{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin: 2.4rem auto;
+    text-align: center;
+    border-radius: var(--rounded);
+    padding:2.4rem;
+    background-color: var(--component);
+}
+
+.services--card h2{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: var(--h2);
+    color: var(--title);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-align: center;
+    margin:0 auto;
+    }
+    
+    .services--card h3{
+        font-family: "Roboto Flex", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: var(--h3);
+        color: var(--title);
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        text-align: center;
+        color: var(--primary-text);
+    }
+    
+    .services--card p{
+        font-family: "Roboto Flex", sans-serif;
+        font-weight: 400;
+        font-size: var(--p);
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        text-align: center;
+        color: var(--primary-text);
+    }
+
+    .services--card img{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height:auto;
+        margin:0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+.projects--section{
+display:flex;
+flex-direction: column;
+width: 100%;
+height: auto;
+padding-top: 4.4rem;
+padding-bottom: 4.4rem;
+background-color: var(--section--projects);
+}
+
+
+.projects--card{
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 480px; /* Ajusta según tus necesidades */
+    height: auto;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--component);
+    overflow: hidden;
+    border-radius: var(--rounded);
+    margin: 2.4rem auto;
+    border: .001rem solid var(--border);
+}
+.projects--card img{
+    width: 100%; /* La imagen ocupa todo el ancho de la card */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio extra debajo de la imagen */
+}
+
+
+.projects--card h2{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: var(--h2);
+    color: var(--title);
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    text-align: center;
+    margin:0 auto;
+    }
+    
+    .projects--card h3{
+        font-family: "Roboto Flex", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 800;
+        font-size: var(--h3);
+        color: var(--title);
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        text-align: center;
+        color: var(--primary-text);
+    }
+    
+    .projects--card p{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--p);
+    padding: 1.2rem 1.2rem;
+    text-align: left;
+    color: var(--primary-text);
+    }
+
+    .projects--card a{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+        max-height: 64px;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border: .01rem solid var(--border);
+    }
+    .projects--card picture img{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+
+.section--art{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: auto;
+padding-top: 2.4rem;
+padding-bottom: 2.4rem;
+align-items: center;
+justify-content: center;
+background-color: var(--section--art);
+}
+
+.art--card{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin: 2.4rem auto;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    border-radius: var(--rounded);
+    align-items: center;
+    justify-content: center;
+    background-color: var(--component);
+    color: var(--primary-text);
+}   
+    .art--card h3{
+        font-family: "Roboto Flex", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: var(--h3);
+        color: var(--title);
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        text-align: center;
+        color: var(--primary-text);
+    }
+    
+    .art--card p{
+        width: 90%;
+        height: auto;
+        font-family: "Roboto Flex", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: var(--p);
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+        text-align: left;
+        color: var(--primary-text);
+    }
+
+    .art--card a{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin-top: .333rem;
+        margin-bottom: .333rem;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--rounded);
+        border: .01rem solid var(--border);
+    }
+
+    .art--card img{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--rounded);
+        padding: .999rem;
+    }
+
+
+    .section--livecoding{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 1.2rem auto;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        background-color: var(--section--livecoding);
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--rounded);
+        }
+        
+        .livecoding--card{
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            height: auto;
+            margin: 2.4rem auto;
+            border-radius: var(--rounded);
+            align-items: center;
+            justify-content: center;
+            background-color: var(--component);
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+        }
+
+        .livecoding--card h1{
+            font-family: "Roboto Flex", sans-serif;
+            font-weight: 600;
+            font-size: var(--h1);
+            color: var(--primary-text);
+            padding: 1.2rem;
+            text-align: center;
+        }
+
+        .livecoding--card h2{
+            font-family: "Roboto Flex", sans-serif;
+            font-weight: 500;
+            font-size: var(--h2);
+            color: var(--primary-text);
+            padding: 1.2rem;
+            text-align: center;
+        }
+        
+        .livecoding--card p{
+            width: 90%;
+            height: auto;
+            font-family: "Roboto Flex", sans-serif;
+            font-weight: 400;
+            font-size: var(--p);
+            padding-top: .999rem;
+            padding-bottom: .999rem;
+            text-align: left;
+            color: var(--primary-text);
+        }
+
+        .livecoding--card a{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: auto;
+            padding-top: .999rem;
+            padding-bottom: .999rem;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--rounded);
+            color: var(--primary-text);
+            border: .01rem solid var(--border);
+        }
+
+        .livecoding--card .logo--clic{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+
+.livecoding--card img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-radius: var(--rounded);
+}
+
+.section--videoart{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: var(--section--livecoding);
+    align-items: center;
+    justify-content: center;
+    margin: 1.2rem auto;
+    border-radius: var(--rounded);
+}
+
+.videoart--card{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    margin: 2.4rem auto;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-radius: var(--rounded);
+    align-items: center;
+    justify-content: center;
+    background-color: var(--component);
+}
+
+.videoart--card h3{
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: var(--h3);
+    color: var(--title);
+    padding-top: 1.2rem;
+    padding-bottom: 2.4rem;
+    text-align: center;
+}
+
+.videoart--card p{
+    width: 90%;
+    height: auto;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: var(--p);
+    padding-top: .333rem;
+    padding-bottom: .333rem;
+    text-align: left;
+}
+
+.videoart--card a{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin-top: .333rem;
+    margin-bottom: .333rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--rounded);
+    border: .001rem solid var(--border);
+}
+
+.videoart--card img{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: auto;
+margin: 0 auto;
+padding-top: 1.2rem;
+padding-bottom: 1.2rem;
+border-radius: var(--rounded);
+}
+
+
+/* contact section */
+
+.contact--section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--section--art);
+    align-items: center;
+    justify-content: center;
+}
+
+.contact--card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    background-color: var(--component);
+    align-items: center;
+    justify-content: center;
+}
+
+.contact--card p{
+    font-family: "Roboto Flex", sans-serif;
+    font-size: var(--p);
+    width: 100%;
+    height: auto;
+    text-align: center; 
+}
+
+.contact--card a{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    margin: 1.2rem auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--rounded);
+    border: .01rem solid var(--border);
+}
+
+
+
+
+.footer--section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-top: 6.4rem;
+    padding-bottom: 7.2rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.footer--card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer--card p{
+    font-family: "Roboto Flex", sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    color: #d4d4d4;
+  }
+
+  .footer--card .cv--button{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: auto;
+    align-items: center;
+    justify-items: center;
+    border-radius: 1.2rem;
+  }
+
+/* slider */
+
+.slider--container{
+width: 95%;
+height: auto;
+padding: 1.2rem;
+border-radius: var(--rounded);
+background-color: var(--component);
+}
+
+.slider--card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    max-width: 1024px;
+    margin:0 auto;
+    border-radius: var(--rounded);
+    background-color: transparent;
+    /* Para que la tarjeta no crezca mas de 768px */
+  }
+
+  .slider--card a{
+    width: 100%;
+    height: auto;
+    background-color: var(--button);
+    color: var(--button--dark);
+    padding: 1rem;
+    border-radius: var(--rounded);
+  }
+
+  .slider--card img{
+    width: 100%;
+    height: auto;
+    margin: 1.2rem auto;
+    border-radius: var(--rounded);
+    padding: .111rem;
+    background-color: transparent;
+  }
+
+
+
+.livecoding--slider{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:y proximity;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: var(--rounded);
+  }
+
+
+/* slider */
+
+.slider--container{
+    width: 100%;
+    height: auto;
+    border-radius: var(--rounded);
+    background-color: var(--component);
+    }
+    
+    .lc--slide{
+        position: relative;
+        scroll-snap-align: center;
+        width: 100%;
+        height: auto;
+        min-width: 320px;
+        margin:0 auto;
+        border-radius: var(--rounded);
+        background-color: transparent;
+ 
+        /* Para que la tarjeta no crezca mas de 768px */
+      }
+    
+      .lc--slide a{
+        width: 95%;
+        height: auto;
+        background-color: var(--button);
+        color: var(--button--dark);
+        padding: 1rem;
+        border-radius: var(--rounded);
+        border: .01rem solid var(--border);
+      }
+    
+      .lc--slide img{
+        width: 100%;
+        height: auto;
+        margin: 1.6rem auto;
+        border-radius: var(--rounded);
+        background-color: transparent;
+        padding: 0 .222rem;
+      }
+    
+      .livecoding--card p{
+        text-align: center;
+      }
+
+      .livecoding--card iframe{
+        border:none;
+        padding: .333rem;
+        margin: 0 auto;
+        width: 100%;
+        height: 480px;
+        border-radius: 1.2rem;
+      }
+
+      .livecoding--card .livecoding--clic{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 2.4rem;
+        border: .001rem solid var(--border);
+        border-radius: 1.2rem;
+      }
+      .livecoding--card .livecoding--clic p{
+        padding: 1.2rem;
+        text-align: center;
+      }
+
+
+  .bivio--slider {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:y proximity;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 0;
+  }
+  
+  .bivio--slide{
+    position: relative;
+    scroll-snap-align: center;
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    margin:0 auto;
+    border-radius: var(--rounded);
+    background-color: transparent;
+    /* Para que la tarjeta no crezca mas de 768px */
+  }
+
+  .bivio--slide a{
+    width: 95%;
+    height: auto;
+    background-color: var(--button);
+    color: var(--button--dark);
+    padding: 1rem;
+    border-radius: var(--rounded);
+  }
+
+  .bivio--slide img{
+    width: 100%;
+    height: auto;
+    margin: 1.2rem auto;
+    border-radius: var(--rounded);
+    background-color: transparent;
+    padding: 0 .222rem;
+  }
+
+
+
+  .videoarte--slider{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:y proximity;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: var(--rounded);
+  }
+  
+ 
+  .videoarte--slide{
+    position: relative;
+    scroll-snap-align: center;
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    max-width: 1024px;
+    margin:0 auto;
+    border-radius: var(--rounded);
+    background-color: transparent;
+    /* Para que la tarjeta no crezca mas de 768px */
+  }
+
+  .videoarte--slide a{
+    width: 100%;
+    height: auto;
+    background-color: var(--button);
+    color: var(--button--dark);
+    border-radius: var(--rounded);
+  }
+
+  .videoarte--slide img{
+    width: 100%;
+    height: auto;
+    margin: 1.2rem auto;
+    border-radius: var(--rounded);
+    padding: .111rem;
+    background-color: transparent;
+  }
+
+
