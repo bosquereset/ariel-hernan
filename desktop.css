@@ -1,13 +1,11 @@
   @media (min-width: 768px){
     html,body{
-      font-family: "Roboto Flex", sans-serif;
       width: 100%;
       height: auto;
       margin: 0;
       scroll-behavior: smooth;
       overflow-x: hidden;
       transition: background 0.1s linear;
-      background-color: var(--background);
   }
 
 p{
@@ -130,9 +128,6 @@ iframe{
     padding: 1.2rem;
 
   }
-
-
-
 
   .header--section .download--cv{
     border-radius: 1rem;
@@ -397,7 +392,6 @@ font-size: var(--p-desktop);
   font-optical-sizing: auto;
   font-style: normal;
     font-size: var(--h3);
-    color: var(--title);
     padding-top: 1.2rem;
     padding-bottom: 2.4rem;
     text-align: center;
@@ -504,7 +498,6 @@ border-radius: 2.4rem;
         width: 45%;
         height: auto;
         margin: 0 auto;
-        color: var(--button--dark);
         padding: 1.2rem;
         border-radius: var(--rounded);
       }
@@ -541,8 +534,6 @@ border-radius: 2.4rem;
   .bivio--slide a{
     width: 95%;
     height: auto;
-
-    color: var(--button--dark);
     padding: 1rem;
     border-radius: 1.2rem;
   }
@@ -565,7 +556,6 @@ border-radius: 2.4rem;
     scroll-snap-type:y proximity;
     margin: 1.2rem auto;
     border-radius: 1.2rem;
-    border: .001rem solid var(--border);
     padding: 1rem;
   }
 
@@ -574,7 +564,6 @@ border-radius: 2.4rem;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 2.4rem;
-    color:var(--primary-text);
   }
   
  
@@ -593,7 +582,6 @@ border-radius: 2.4rem;
   .videoarte--slide a{
     width: 75%;
     height: auto;
-    color: var(--button--dark);
     padding: 1rem;
     border-radius: 1.2rem;
     margin: 0 auto;

@@ -2,23 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 :root{
-    --background:#1c1917ea;
+
+    color-scheme: light dark;
+
+    --background-dark:#030303;
+    --background-light: #E0E0E0;
+    --surface: #111111;
+    --on-surface: #fff;
+    --accent: #00D1FF;
+    --accent-variant:#00A3CC;
+    --neutral-100:#ffffff;
+    --neutral-900:#0A0A0A;
+    --error: #ff4c4c;
+    --success: #4cff8f;
     --component: #1c1917;   
 
   /* botones */
-    --button--dark:#fffbeb;
+    --button--dark:#E0E0E0;
 
 /* borde */
-  --border:#fafaf940;
+  --border-dark:#fafaf940;
+    --border-light:#03030399;
 
       /* text-color */
-    --title:#fffbeb;
-    --title-reset:#fffbeb;
-    --subtitle: #fffbeb;
-    --title-light:#fffbeb;
-    --subtitle-light:#fffbeb;
-    --primary-text:#fffbeb;
-    --light-text:#fffbeb;
+    --title:#E0E0E0;
+    --title-dark: #030303;
+    --title-reset: #E0E0E0;
+    --dark-text:#E0E0E0;
+    --light-text:#030303;
 
     /* background dark */
     --nav--navbar:#1c1917;
@@ -36,14 +47,18 @@
 
        /* text sizes */
     --h1:3.2rem;
-    --h2:2.3561rem;
-    --h3:1.4562rem;
-    --p:.999rem;
-    --h1-desktop:4.0122rem;
-    --h2-desktop:3.2561rem;
-    --h3-desktop:2.4562rem;
-    --p-desktop:1.1rem;
+    --h2:2.4rem;
+    --h3:1.6rem;
+    --p:.8rem;
+    --h1-desktop:4.0rem;
+    --h2-desktop:3.2rem;
+    --h3-desktop:2.4rem;
+    --p-desktop:1.6rem;
     --rounded: .666rem;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-bold: 700;
+    --line-height-base: 1.6rem;
     }
 
 *{
@@ -60,12 +75,13 @@ html,body{
     scroll-behavior: smooth;
     overflow-x: hidden;
     transition: background 0.1s linear;
-    background-color: var(--background);
+    color: light-dark( var(--light-text), var(--dark-text));
+    background-color:light-dark( var(--background-light), var(--background-dark));
 }
 
 
 strong{
-    color: var(--light-text);
+    color: light-dark( var(--light-text), var(--dark-text));
     font-weight: 800;
 }
 
@@ -90,7 +106,7 @@ h2{
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 2.4rem;
-    color:var(--primary-text);
+  color: light-dark( var(--light-text), var(--dark-text));
     text-align: center;
   }
   
@@ -106,9 +122,9 @@ img{
 
 
 button{
-    color:var(--primary-text);
+    color: light-dark( var(--light-text), var(--dark-text));
     border: none;
-    background-color: var(--button--dark);
+    background-color:light-dark( var(--background-light), var(--background-dark));
 }
 
 a button {
@@ -122,8 +138,8 @@ a button {
     justify-content: center;
     align-items: center;
     margin: .111rem auto;
-    color: var(--primary-text);
-    border: .01rem solid var(--border);
+    color: light-dark( var(--light-text), var(--dark-text));
+    border: .01rem solid light-dark( var(--border-light), var(--border-dark));
 }
 
 
@@ -142,8 +158,8 @@ a{
     border-radius: .111rem;
     transition: .5s;
     margin: 1.5rem auto;
-    color: var(--primary-text);
-    border: .01rem solid var(--border);
+  color: light-dark( var(--light-text), var(--dark-text));
+    border: .01rem solid light-dark( var(--border-light), var(--border-dark));
 }
 
 
@@ -166,7 +182,7 @@ nav{
     align-items: center;
     position: fixed;
     z-index: 100;
-    background-color: var(--background--dark);
+    background-color:light-dark( var(--background-light), var(--background-dark));
 }
 
 
@@ -186,7 +202,7 @@ justify-content: center;
 /* secciones separadas y con colores */
 
 .nav--navbar{
-background-color: var(--component);
+    background-color:light-dark( var(--background-light), var(--background-dark));
 }
 
 .header--section{
@@ -200,7 +216,7 @@ justify-content: center;
 text-align: center;
 margin-top:4.8rem;
 position: relative;
-background-color: var(--component);
+background-color:light-dark( var(--background-light), var(--background-dark));
 }
 
  .header--card{
@@ -212,15 +228,15 @@ background-color: var(--component);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--component);
+    background-color:light-dark( var(--background-light), var(--background-dark));
 
 }
 
 .header--section .header--logo{
-    width: 88%;
+    width: 100%;
+    max-width: 240px;
     height:auto;
     border-radius: 1.2rem;
-    padding: 3.33rem;
 }
 
 .header--section .bg-img{
@@ -238,7 +254,7 @@ background-color: var(--component);
     font-style: normal;
     font-weight: 600;
     font-size: 3.4rem;
-    color: var(--primary-text);
+    color: light-dark( var(--light-text), var(--dark-text));
     margin: .333rem;
 }
 
@@ -247,7 +263,7 @@ background-color: var(--component);
     font-family: "Roboto Flex", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: var(--primary-text);
+     color: light-dark( var(--light-text), var(--dark-text));
     padding: .999rem;
     margin: .333rem;
 }
@@ -260,14 +276,14 @@ background-color: var(--component);
     border-radius: .999rem;
     margin: .666rem auto;
     padding: 1.2rem;
-    background-color: var(--button);
-    color: var(--primary-text);
-    border: .01rem solid var(--border);
+    background-color:light-dark( var(--background-light), var(--background-dark));
+     color: light-dark( var(--light-text), var(--dark-text));
+    border: .01rem solid light-dark( var(--border-light), var(--border-dark));
   }
 
 .header--section .download--cv{
-    color:var(--background--light);
-    background-color: var(--button);
+   color: light-dark( var(--light-text), var(--dark-text));
+    background-color:light-dark( var(--background-light), var(--background-dark));
     border-radius: 1rem;
     width: 90%;
     height: auto;
@@ -280,7 +296,7 @@ width: 100%;
 height: auto;
 padding-top: 2.4rem;
 padding-bottom: 2.4rem;
-background-color: var(--section--about);
+background-color:light-dark( var(--background-light), var(--background-dark));
 text-align: center;
 }
 
@@ -298,8 +314,8 @@ border-radius: var(--rounded);
 text-align: left;
 justify-content: center;
 align-items: center;
-background-color: var(--component);
-border: .01rem solid var(--border);
+background-color:light-dark( var(--background-light), var(--background-dark));
+border: .01rem solid light-dark( var(--border-light), var(--border-dark));
 }
 
 .about--me--card{
@@ -315,7 +331,7 @@ border: .01rem solid var(--border);
     border-radius: var(--rounded);
     justify-content: center;
     align-items: center;
-    background-color: var(--component);
+    background-color:light-dark( var(--background-light), var(--background-dark));
     }
 
         .about--me--card h3{
@@ -323,7 +339,7 @@ border: .01rem solid var(--border);
             font-optical-sizing: auto;
             font-style: normal;
             font-size: var(--h3);
-            color: var(--primary-text);
+            color: light-dark( var(--light-text), var(--dark-text));
             padding-top: 1.2rem;
             padding-bottom: 1.2rem;
             text-align: center;
@@ -342,7 +358,7 @@ border: .01rem solid var(--border);
             flex-direction: column;
             width: 90%;
             height: auto;
-            color: var(--primary-text);
+            color: light-dark( var(--light-text), var(--dark-text));
         }
         
 
@@ -352,7 +368,7 @@ border: .01rem solid var(--border);
     font-optical-sizing: auto;
     font-style: normal;
 font-size: var(--h2);
-color: var(--primary-text);
+  color: light-dark( var(--light-text), var(--dark-text));
 padding-top: 1.2rem;
 padding-bottom: 1.2rem;
 text-align: center;
@@ -363,7 +379,7 @@ text-align: center;
     font-optical-sizing: auto;
     font-style: normal;
     font-size: var(--h3);
-    color: var(--primary-text);
+    color: light-dark( var(--light-text), var(--dark-text));
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     text-align: center;
@@ -377,7 +393,7 @@ text-align: center;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     text-align: center;
-    color: var(--primary-text);
+    color: light-dark( var(--light-text), var(--dark-text));
 }
 
 .about--card a{
@@ -399,7 +415,7 @@ width: 100%;
 height: auto;
 padding-top: 2.4rem;
 padding-bottom: 2.4rem;
-background-color: var(--section--services);
+background-color:light-dark( var(--background-light), var(--background-dark));
 }
 
 .services--card{
@@ -411,7 +427,7 @@ background-color: var(--section--services);
     text-align: center;
     border-radius: var(--rounded);
     padding:2.4rem;
-    background-color: var(--component);
+    background-color:light-dark( var(--background-light), var(--background-dark));
 }
 
 .services--card h2{
@@ -419,7 +435,7 @@ background-color: var(--section--services);
     font-optical-sizing: auto;
     font-style: normal;
     font-size: var(--h2);
-    color: var(--title);
+  color: light-dark( var(--light-text), var(--dark-text));
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     text-align: center;
@@ -431,11 +447,10 @@ background-color: var(--section--services);
         font-optical-sizing: auto;
         font-style: normal;
         font-size: var(--h3);
-        color: var(--title);
+    color: light-dark( var(--light-text), var(--dark-text));
         padding-top: 1.2rem;
         padding-bottom: 1.2rem;
         text-align: center;
-        color: var(--primary-text);
     }
     
     .services--card p{
@@ -445,7 +460,7 @@ background-color: var(--section--services);
         padding-top: 1.2rem;
         padding-bottom: 1.2rem;
         text-align: center;
-        color: var(--primary-text);
+        color: light-dark( var(--light-text), var(--dark-text));
     }
 
     .services--card img{
@@ -465,7 +480,7 @@ width: 100%;
 height: auto;
 padding-top: 4.4rem;
 padding-bottom: 4.4rem;
-background-color: var(--section--projects);
+background-color:light-dark( var(--background-light), var(--background-dark));
 }
 
 
@@ -482,7 +497,7 @@ background-color: var(--section--projects);
     overflow: hidden;
     border-radius: var(--rounded);
     margin: 2.4rem auto;
-    border: .001rem solid var(--border);
+border: .01rem solid light-dark( var(--border-light), var(--border-dark));
 }
 .projects--card img{
     width: 100%; /* La imagen ocupa todo el ancho de la card */
@@ -497,7 +512,7 @@ background-color: var(--section--projects);
     font-style: normal;
     font-weight: 700;
     font-size: var(--h2);
-    color: var(--title);
+  color: light-dark( var(--light-text), var(--dark-text));
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     text-align: center;
@@ -510,11 +525,10 @@ background-color: var(--section--projects);
         font-style: normal;
         font-weight: 800;
         font-size: var(--h3);
-        color: var(--title);
+  color: light-dark( var(--light-text), var(--dark-text));
         padding-top: 1.2rem;
         padding-bottom: 1.2rem;
         text-align: center;
-        color: var(--primary-text);
     }
     
     .projects--card p{
@@ -525,7 +539,7 @@ background-color: var(--section--projects);
     font-size: var(--p);
     padding: 1.2rem 1.2rem;
     text-align: left;
-    color: var(--primary-text);
+   color: light-dark( var(--light-text), var(--dark-text));
     }
 
     .projects--card a{
@@ -537,7 +551,7 @@ background-color: var(--section--projects);
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        border: .01rem solid var(--border);
+border: .01rem solid light-dark( var(--border-light), var(--border-dark));
     }
     .projects--card picture img{
         display: flex;
@@ -558,7 +572,7 @@ padding-top: 2.4rem;
 padding-bottom: 2.4rem;
 align-items: center;
 justify-content: center;
-background-color: var(--section--art);
+    background-color:light-dark( var(--background-light), var(--background-dark));
 }
 
 .art--card{
@@ -572,8 +586,8 @@ background-color: var(--section--art);
     border-radius: var(--rounded);
     align-items: center;
     justify-content: center;
-    background-color: var(--component);
-    color: var(--primary-text);
+    background-color:light-dark( var(--background-light), var(--background-dark));
+  color: light-dark( var(--light-text), var(--dark-text));
 }   
     .art--card h3{
         font-family: "Roboto Flex", sans-serif;
@@ -585,7 +599,7 @@ background-color: var(--section--art);
         padding-top: 1.2rem;
         padding-bottom: 1.2rem;
         text-align: center;
-        color: var(--primary-text);
+        color: light-dark( var(--light-text), var(--dark-text));
     }
     
     .art--card p{
@@ -598,7 +612,7 @@ background-color: var(--section--art);
         padding-top: 2.4rem;
         padding-bottom: 2.4rem;
         text-align: left;
-        color: var(--primary-text);
+        color: light-dark( var(--light-text), var(--dark-text));
     }
 
     .art--card a{
@@ -611,7 +625,7 @@ background-color: var(--section--art);
         align-items: center;
         justify-content: center;
         border-radius: var(--rounded);
-        border: .01rem solid var(--border);
+ border: .01rem solid light-dark( var(--border-light), var(--border-dark));
     }
 
     .art--card img{
@@ -634,7 +648,7 @@ background-color: var(--section--art);
         margin: 1.2rem auto;
         padding-top: 1.2rem;
         padding-bottom: 1.2rem;
-        background-color: var(--section--livecoding);
+        background-color:light-dark( var(--background-light), var(--background-dark));
         align-items: center;
         justify-content: center;
         border-radius: var(--rounded);
@@ -658,7 +672,7 @@ background-color: var(--section--art);
             font-family: "Roboto Flex", sans-serif;
             font-weight: 600;
             font-size: var(--h1);
-            color: var(--primary-text);
+            color: light-dark( var(--light-text), var(--dark-text));
             padding: 1.2rem;
             text-align: center;
         }
@@ -667,7 +681,7 @@ background-color: var(--section--art);
             font-family: "Roboto Flex", sans-serif;
             font-weight: 500;
             font-size: var(--h2);
-            color: var(--primary-text);
+            color: light-dark( var(--light-text), var(--dark-text));
             padding: 1.2rem;
             text-align: center;
         }
@@ -681,7 +695,7 @@ background-color: var(--section--art);
             padding-top: .999rem;
             padding-bottom: .999rem;
             text-align: left;
-            color: var(--primary-text);
+            color: light-dark( var(--light-text), var(--dark-text));
         }
 
         .livecoding--card a{
@@ -694,8 +708,8 @@ background-color: var(--section--art);
             align-items: center;
             justify-content: center;
             border-radius: var(--rounded);
-            color: var(--primary-text);
-            border: .01rem solid var(--border);
+              color: light-dark( var(--light-text), var(--dark-text));
+         border: .01rem solid light-dark( var(--border-light), var(--border-dark));
         }
 
         .livecoding--card .logo--clic{
@@ -728,7 +742,7 @@ background-color: var(--section--art);
     padding-bottom: 1.2rem;
     padding-left: 0;
     padding-right: 0;
-    background-color: var(--section--livecoding);
+    background-color:light-dark( var(--background-light), var(--background-dark));
     align-items: center;
     justify-content: center;
     margin: 1.2rem auto;
@@ -746,7 +760,7 @@ background-color: var(--section--art);
     border-radius: var(--rounded);
     align-items: center;
     justify-content: center;
-    background-color: var(--component);
+    background-color:light-dark( var(--background-light), var(--background-dark));
 }
 
 .videoart--card h3{
@@ -754,7 +768,7 @@ background-color: var(--section--art);
     font-optical-sizing: auto;
     font-style: normal;
     font-size: var(--h3);
-    color: var(--title);
+  color: light-dark( var(--light-text), var(--dark-text));
     padding-top: 1.2rem;
     padding-bottom: 2.4rem;
     text-align: center;
@@ -782,7 +796,7 @@ background-color: var(--section--art);
     align-items: center;
     justify-content: center;
     border-radius: var(--rounded);
-    border: .001rem solid var(--border);
+border: .01rem solid light-dark( var(--border-light), var(--border-dark));
 }
 
 .videoart--card img{
@@ -804,7 +818,7 @@ border-radius: var(--rounded);
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: var(--section--art);
+    background-color:light-dark( var(--background-light), var(--background-dark));
     align-items: center;
     justify-content: center;
 }
@@ -816,7 +830,7 @@ border-radius: var(--rounded);
     height: auto;
     padding-top: 4.8rem;
     padding-bottom: 4.8rem;
-    background-color: var(--component);
+    background-color:light-dark( var(--background-light), var(--background-dark));
     align-items: center;
     justify-content: center;
 }
@@ -838,7 +852,7 @@ border-radius: var(--rounded);
     align-items: center;
     justify-content: center;
     border-radius: var(--rounded);
-    border: .01rem solid var(--border);
+  border: .01rem solid light-dark( var(--border-light), var(--border-dark));
 }
 
 
@@ -853,6 +867,8 @@ border-radius: var(--rounded);
     padding-bottom: 7.2rem;
     position: relative;
     margin: 0 auto;
+    border: none;
+    background-color:light-dark( var(--background-light), var(--background-dark));
 }
 
 
@@ -874,7 +890,7 @@ border-radius: var(--rounded);
     font-weight: 400;
     justify-content: center;
     align-items: center;
-    color: #d4d4d4;
+  color: light-dark( var(--light-text), var(--dark-text));
   }
 
   .footer--card .cv--button{
@@ -894,7 +910,7 @@ width: 95%;
 height: auto;
 padding: 1.2rem;
 border-radius: var(--rounded);
-background-color: var(--component);
+background-color:light-dark( var(--background-light), var(--background-dark));
 }
 
 .slider--card{
@@ -913,8 +929,8 @@ background-color: var(--component);
   .slider--card a{
     width: 100%;
     height: auto;
-    background-color: var(--button);
-    color: var(--button--dark);
+    background-color:light-dark( var(--background-light), var(--background-dark));
+    color: light-dark( var(--light-text), var(--dark-text));
     padding: 1rem;
     border-radius: var(--rounded);
   }
@@ -950,7 +966,7 @@ background-color: var(--component);
     width: 100%;
     height: auto;
     border-radius: var(--rounded);
-    background-color: var(--component);
+    background-color:light-dark( var(--background-light), var(--background-dark));
     }
     
     .lc--slide{
@@ -969,11 +985,11 @@ background-color: var(--component);
       .lc--slide a{
         width: 95%;
         height: auto;
-        background-color: var(--button);
-        color: var(--button--dark);
+    background-color:light-dark( var(--background-light), var(--background-dark));
+  color: light-dark( var(--light-text), var(--dark-text));
         padding: 1rem;
         border-radius: var(--rounded);
-        border: .01rem solid var(--border);
+    border: .01rem solid light-dark( var(--border-light), var(--border-dark));
       }
     
       .lc--slide img{
@@ -1005,7 +1021,7 @@ background-color: var(--component);
         justify-content: center;
         margin: 0 auto;
         padding: 2.4rem;
-        border: .001rem solid var(--border);
+     border: .01rem solid light-dark( var(--border-light), var(--border-dark));
         border-radius: 1.2rem;
       }
       .livecoding--card .livecoding--clic p{
@@ -1040,8 +1056,8 @@ background-color: var(--component);
   .bivio--slide a{
     width: 95%;
     height: auto;
-    background-color: var(--button);
-    color: var(--button--dark);
+    background-color:light-dark( var(--background-light), var(--background-dark));
+  color: light-dark( var(--light-text), var(--dark-text));
     padding: 1rem;
     border-radius: var(--rounded);
   }
@@ -1087,8 +1103,8 @@ background-color: var(--component);
   .videoarte--slide a{
     width: 100%;
     height: auto;
-    background-color: var(--button);
-    color: var(--button--dark);
+    background-color:light-dark( var(--background-light), var(--background-dark));
+    color: light-dark( var(--light-text), var(--dark-text));
     border-radius: var(--rounded);
   }
 
