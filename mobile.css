@@ -297,7 +297,6 @@ height: auto;
 padding-top: 2.4rem;
 padding-bottom: 2.4rem;
 background-color:light-dark( var(--background-light), var(--background-dark));
-text-align: center;
 }
 
 .about--card{
