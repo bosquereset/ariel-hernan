@@ -177,7 +177,6 @@ flex-direction: column;
 width: 100%;
 height: auto;
 font-size: var(--p-desktop);
-text-align: justify;
 padding: 1.8rem;
 font-size: var(--p-desktop);
 }

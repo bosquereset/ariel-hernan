@@ -234,7 +234,7 @@ background-color:light-dark( var(--background-light), var(--background-dark));
 
 .header--section .header--logo{
     width: 100%;
-    max-width: 240px;
+    max-width: 270px;
     height:auto;
     border-radius: 1.2rem;
 }
@@ -387,12 +387,11 @@ text-align: center;
 
 .about--card p{
     font-family: "Roboto Flex", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     font-size: var(--p);
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
-    text-align: center;
+    text-align: left;
     color: light-dark( var(--light-text), var(--dark-text));
 }
 
@@ -493,7 +492,7 @@ background-color:light-dark( var(--background-light), var(--background-dark));
     text-align: left;
     align-items: center;
     justify-content: center;
-    background-color: var(--component);
+    background-color:light-dark( var(--background-light), var(--background-dark));
     overflow: hidden;
     border-radius: var(--rounded);
     margin: 2.4rem auto;
