@@ -315,6 +315,7 @@ justify-content: center;
 align-items: center;
 background-color:light-dark( var(--background-light), var(--background-dark));
 border: .01rem solid light-dark( var(--border-light), var(--border-dark));
+box-shadow: .8rem 1.6rem 4rem oklch(.11 .333 300);
 }
 
 .about--me--card{
@@ -496,6 +497,7 @@ background-color:light-dark( var(--background-light), var(--background-dark));
     border-radius: var(--rounded);
     margin: 2.4rem auto;
 border: .01rem solid light-dark( var(--border-light), var(--border-dark));
+box-shadow: .8rem 1.6rem 4rem oklch(.11 .333 300);
 }
 .projects--card img{
     width: 100%; /* La imagen ocupa todo el ancho de la card */
