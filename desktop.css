@@ -148,7 +148,7 @@ iframe{
     .about--card{
         display: flex;
         flex-direction: column;
-        width: 30%;
+        width: 40%;
         height: auto;
         margin: 2rem auto;
         padding-top: 9.2rem;
@@ -164,7 +164,7 @@ iframe{
 
 
 .about--card a{
-width: 66%;
+width: 80%;
 height: auto;
 display: flex;
 flex-direction: column;
@@ -200,7 +200,7 @@ font-size: var(--p-desktop);
                 flex-direction: column;
                 width: 100%;
                 height: auto;
-                max-width: 480px;
+                max-width: 560px;
                 text-align: left;
                 align-items: flex-start;
                 justify-content: flex-start;

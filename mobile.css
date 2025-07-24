@@ -48,12 +48,12 @@
        /* text sizes */
     --h1:3.2rem;
     --h2:2.4rem;
-    --h3:1.6rem;
+    --h3:1rem;
     --p:.8rem;
     --h1-desktop:4.0rem;
     --h2-desktop:3.2rem;
     --h3-desktop:2.4rem;
-    --p-desktop:1.6rem;
+    --p-desktop:1.2rem;
     --rounded: .666rem;
     --weight-regular: 400;
     --weight-medium: 500;
@@ -302,7 +302,7 @@ background-color:light-dark( var(--background-light), var(--background-dark));
 .about--card{
 display: flex;
 flex-direction: column;
-width: 85%;
+width: 90%;
 height: auto;
 margin: 2.4rem auto;
 padding-top: 4.8rem;
@@ -315,7 +315,8 @@ justify-content: center;
 align-items: center;
 background-color:light-dark( var(--background-light), var(--background-dark));
 border: .01rem solid light-dark( var(--border-light), var(--border-dark));
-box-shadow: .8rem 1.6rem 4rem oklch(.11 .333 300);
+box-shadow: .0111rem 1rem 4.8rem oklch(10 .444 100 / 3%);
+backdrop-filter: blur(32px);
 }
 
 .about--me--card{
@@ -497,7 +498,8 @@ background-color:light-dark( var(--background-light), var(--background-dark));
     border-radius: var(--rounded);
     margin: 2.4rem auto;
 border: .01rem solid light-dark( var(--border-light), var(--border-dark));
-box-shadow: .8rem 1.6rem 4rem oklch(.11 .333 300);
+box-shadow: .0111rem 1rem 4.8rem oklch(90 .444 1000 / 10%);
+backdrop-filter: blur(32px);
 }
 .projects--card img{
     width: 100%; /* La imagen ocupa todo el ancho de la card */
