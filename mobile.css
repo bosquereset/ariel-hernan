@@ -289,7 +289,6 @@ gap: 1.6rem;
   background-color: var(--primary);
   border-radius: 1.6rem;
   border: .08rem solid var(--tertiary);
-    box-shadow: .01rem .01rem 1.6rem oklab(59.833000000000006% 0.09781 -0.22318 / 0.201);
 }
 
 .services--title--container{
@@ -388,7 +387,6 @@ height: auto;
   height: auto;
   border-radius: 1.6rem;
   overflow: hidden;
-    box-shadow: .01rem .01rem 1.6rem oklab(59.833000000000006% 0.09781 -0.22318 / 0.1);
   border: .1rem solid #333;
   padding: 6.4rem;
   margin: 0 auto;
