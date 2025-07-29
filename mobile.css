@@ -11,6 +11,7 @@
     --secondary: oklab(51.028% 0 -0.00006);
     --tertiary: oklab(68.29499999999999% 0 -0.00008);
     --cuaternary: oklab(97.878% 0.00741 -0.0103);
+    --hightlight:  oklab(42.526% 0.08263 -0.19101);
 
     --text--light: #111;
     --text--dark: #efefef;
@@ -90,7 +91,7 @@ h1{
   font-weight: 500;
   font-style: normal;
   font-size: var(--h1);
-  color: oklab(59.833000000000006% 0.09781 -0.22318);
+  color: var(--cuaternary);
 }
 
 h2{
@@ -177,8 +178,8 @@ a{
 }
 
 .contact-me{
-background-color: var(--cuaternary);
-color: var(--text--light);
+background-color: var(--hightlight);
+color: var(--text--dark);
 padding: .8rem 1.6rem;
 border: none;
 border-radius: 1.6rem;
@@ -190,7 +191,7 @@ transition: .85s;
 background-color: transparent;
 color: var(--text--dark);
 padding: .8rem 1.6rem;
-border: .1rem solid var(--secondary);
+border: .1rem solid var(--hightlight);
 border-radius: 1.6rem;
 transition: .85s;
 }
