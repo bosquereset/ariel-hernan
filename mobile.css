@@ -42,7 +42,7 @@
 }
 
 html,body{
-    font-family: "Roboto Flex", sans-serif;
+  font-family: "Poppins", sans-serif;
     width: 100%;
     height: auto;
     margin: 0;
@@ -128,14 +128,30 @@ a{
     width: 100%;
     height: auto;
     text-decoration: none;
-    padding: .8rem;
     align-items: center;
     justify-content: center;
     border-radius: 1.6rem;
     transition: .5s;
-    margin: 1.5rem auto;
+    margin: 0 auto;
 }
 
+
+.cta-button{
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--p);
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: .8rem;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.6rem;
+    transition: .5s;
+    margin: 1.6rem auto;
+}
 
 
 .nav--logo{
@@ -259,6 +275,8 @@ height: auto;
   background-color: transparent;
   border-radius: 99999rem;
   border: solid .333rem var(--primary);
+  margin: 1.6rem auto;
+  padding: .8rem;
 }
 
 .button--up img{
@@ -286,9 +304,10 @@ gap: 1.6rem;
   width: 600px;
   height: auto;
   padding: .8rem 3.2rem;
-  background-color: var(--primary);
+background: linear-gradient(45deg, oklab(22.344% 0.01919 -0.03416) 0%, oklab(21.519% 0.01254 -0.01643) 30%, oklab(20.1% 0.01183 -0.01283) 100%);
   border-radius: 1.6rem;
-  border: .08rem solid var(--tertiary);
+  margin: 1.6rem auto;
+  border: .08rem solid var(--primary);
 }
 
 .services--title--container{
@@ -378,7 +397,7 @@ height: auto;
   flex-direction: row;
   scroll-behavior: smooth;
   overflow-x: scroll;
-  gap: .8rem;
+  gap: .48rem;
 }
 
 .project--card{
@@ -387,26 +406,61 @@ height: auto;
   height: auto;
   border-radius: 1.6rem;
   overflow: hidden;
-  border: .1rem solid #333;
-  padding: 6.4rem;
-  margin: 0 auto;
+  border: .1rem solid var(--primary);
+  padding: 7.2rem;
+  margin: 1.6rem auto;
 }
+
+.pampa{
+  background-image: url(./pampalabs.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.espora{
+    background-image: url(./espora.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.velo{
+    background-image: url(./velo-cover.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
+.ama-maitea{
+    background-image: url(./ama-maitea.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+}
+
 
 .project--title{
   position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 400;
+  bottom: 1rem;
+  left: 1.6rem;
+  color: var(--cuaternary);
+    font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
   margin: 0 auto;
+  text-shadow: .1rem .01rem .1rem var(--primary);
 }
 
 .project--etiqueta{
   position: absolute;
   top: .8rem;
   right: .4rem;
-  background: white;
+  background-color: var(--cuaternary);
   color: #333;
   font-size: 0.8rem;
   font-weight: 500;
@@ -447,13 +501,14 @@ height: auto;
   font-size: 1.2rem;
   text-align: left;
   color: var(--tertiary);
-
+  padding: 0 .8rem;
 }
 
 .footer--card--text p{
 font-size: .60rem;
 text-align: left;
 color: var(--tertiary);
+  padding: 0 .8rem;
 }
 
 .footer--card--icon img{
