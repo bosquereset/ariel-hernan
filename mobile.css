@@ -20,9 +20,9 @@
     --button--dark:#E0E0E0;
 
     /* text sizes */
-    --h1:3rem;
+    --h1:2.4rem;
     --h2:1.2rem;
-    --h3:1.2rem;
+    --h3:1rem;
     --p:.8rem;
     --h1-desktop:4.0rem;
     --h2-desktop:3.2rem;
@@ -50,7 +50,7 @@ html,body{
     overflow-x: hidden;
     transition: background 0.1s linear;
     color: light-dark(var(--text--light), var(--text--dark));
-    background-color: light-dark((var(--background-light)), var(--background-dark));
+    background-color: var(--background-dark)
 }
 
 
@@ -172,6 +172,15 @@ border: none;
 border-radius: 1.6rem;
 }
 
+.contact-me:hover{
+background-color: transparent;
+color: var(--text--dark);
+padding: .8rem 1.6rem;
+border: .1rem solid var(--secondary);
+border-radius: 1.6rem;
+transition: .5s;
+}
+
 /* navbar */
 
 header{
@@ -276,12 +285,12 @@ height: auto;
   border-radius: 99999rem;
   border: solid .333rem var(--primary);
   margin: 1.6rem auto;
-  padding: .8rem;
+  padding: .4rem;
 }
 
 .button--up img{
   width: 100%;
-  max-width: 80px;
+  max-width: 64px;
   height: auto;
   padding: .64rem;
 }
@@ -304,7 +313,7 @@ gap: 1.6rem;
   width: 600px;
   height: auto;
   padding: .8rem 3.2rem;
-background: linear-gradient(45deg, oklab(22.344% 0.01919 -0.03416) 0%, oklab(21.519% 0.01254 -0.01643) 30%, oklab(20.1% 0.01183 -0.01283) 100%);
+background: linear-gradient(45deg, oklab(22.344% 0.01919 -0.03416 / 0.668) 0%, oklab(21.519% 0.01254 -0.01643 / 0.666) 30%, oklab(20.1% 0.01183 -0.01283 / 0.6) 100%);
   border-radius: 1.6rem;
   margin: 1.6rem auto;
   border: .08rem solid var(--primary);
@@ -480,7 +489,7 @@ height: auto;
     height: auto;
     margin: 0 auto;
     border: none;
-    background-color: var(--primary);
+ background-color: var(--background-dark);
     border-top: .016rem solid var(--secondary);
 }
 
@@ -501,14 +510,14 @@ height: auto;
   font-size: 1.2rem;
   text-align: left;
   color: var(--tertiary);
-  padding: 0 .8rem;
+  padding: 0 .4rem;
 }
 
 .footer--card--text p{
 font-size: .60rem;
 text-align: left;
 color: var(--tertiary);
-  padding: 0 .8rem;
+  padding: 0 .4rem;
 }
 
 .footer--card--icon img{

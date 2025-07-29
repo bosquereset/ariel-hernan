@@ -1,8 +1,27 @@
-<svg width="231" height="231" viewBox="0 0 231 231" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_121_324" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="231" height="231">
-<rect width="230.118" height="230.118" fill="#D9D9D9"/>
-</mask>
-<g mask="url(#mask0_121_324)">
-<path d="M101 206V77.2L50.6 127.6L31 108L115 24L199 108L179.4 127.6L129 77.2V206H101Z" fill="white"/>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 99.21 99.21">
+  <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 9)  -->
+  <defs>
+    <style>
+      .st0 {
+        mask: url(#mask);
+      }
+
+      .st1 {
+        fill: #d9d9d9;
+      }
+
+      .st2 {
+        fill: #fff;
+      }
+    </style>
+    <mask id="mask" x="-9.11" y="-9.11" width="116.48" height="116.48" maskUnits="userSpaceOnUse">
+      <g id="mask0_121_324">
+        <rect class="st1" x="-9.11" y="-9.11" width="116.48" height="116.48"/>
+      </g>
+    </mask>
+  </defs>
+  <g class="st0">
+    <path class="st2" d="M42.02,95.17V29.97l-25.51,25.51-9.92-9.92L49.11,3.04l42.52,42.52-9.92,9.92-25.51-25.51v65.2h-14.17Z"/>
+  </g>
 </svg>
