@@ -25,15 +25,19 @@
     --h2:1.2rem;
     --h3:1rem;
     --p:.8rem;
+    
     --h1-desktop:4.0rem;
     --h2-desktop:3.2rem;
     --h3-desktop:2.4rem;
     --p-desktop:1.2rem;
+    --subtitle: .96rem;
+    
     --rounded: .666rem;
+
+
     --weight-regular: 400;
     --weight-medium: 500;
     --weight-bold: 700;
-    --subtitle: .96rem
     }
 
 *{
@@ -74,15 +78,6 @@ ul{
     list-style: none;
 }
 
-p{
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: var(--p);
-}
-
-
 
 
 
@@ -108,6 +103,17 @@ h3{
   font-size: var(--subtitle);
 }
 
+p{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--p);
+}
+
+
+
+
 img{
     display: flex;
     flex-direction: column;
@@ -130,7 +136,7 @@ a{
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    border-radius: 1.6rem;
+   border-radius: var(--rounded);
     transition: .5s;
     margin: 0 auto;
     cursor: pointer;
@@ -150,7 +156,7 @@ a{
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    border-radius: 1.6rem;
+    border-radius: var(--rounded);
     transition: .5s;
     margin: 1.6rem auto;
     cursor: pointer;
@@ -182,7 +188,7 @@ background-color: var(--hightlight);
 color: var(--text--dark);
 padding: .8rem 1.6rem;
 border: none;
-border-radius: 1.6rem;
+  border-radius: var(--rounded);
 cursor: pointer;
 transition: .85s;
 }
@@ -192,7 +198,7 @@ background-color: transparent;
 color: var(--text--dark);
 padding: .8rem 1.6rem;
 border: .1rem solid var(--hightlight);
-border-radius: 1.6rem;
+  border-radius: var(--rounded);
 transition: .85s;
 }
 
@@ -323,10 +329,10 @@ gap: 1.6rem;
   width: 640px;
   height: auto;
   padding: .8rem 3.2rem;
-  border-radius: 1.6rem;
+  border-radius: var(--rounded);
   margin: 1.6rem auto;
   border: .08rem solid var(--primary);
-      background-color: light-dark(( var(--background-light), var(--background-dark)));
+  background-color: light-dark(( var(--background-light), var(--background-dark)));
   backdrop-filter: blur(24px);
 }
 
@@ -379,7 +385,7 @@ height: 72px;
   background-color: var(--primary);
   color: var(--cuaternary);
   border: .040rem solid var(--secondary);
-  border-radius: .8rem;
+  border-radius: var(--rounded);
   font-size: .64rem;
 }
 
@@ -425,7 +431,7 @@ height: auto;
   position: relative;
   width: 100%;
   height: auto;
-  border-radius: 1.6rem;
+  border-radius: var(--rounded);
   overflow: hidden;
   border: .1rem solid var(--primary);
   padding: 7.2rem;
@@ -487,7 +493,7 @@ height: auto;
   font-size: 0.8rem;
   font-weight: 500;
   padding: .5px 12px;
-  border-radius: .8rem;
+   border-radius: var(--rounded);
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
