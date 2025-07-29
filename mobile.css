@@ -153,6 +153,7 @@ a{
     transition: .5s;
     margin: 1.6rem auto;
     cursor: pointer;
+      background-color: light-dark( ( var(--background-dark),var(--background-light) ) );
 }
 
 
@@ -242,6 +243,7 @@ color: var(--secondary);
   border: .080rem solid var(--tertiary);
   border-radius: 3.2rem;
   color: light-dark(var(--text--light),var(--text--dark));
+
 }
 
 nav{
