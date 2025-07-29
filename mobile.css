@@ -13,7 +13,7 @@
     --cuaternary: oklab(97.878% 0.00741 -0.0103);
 
     --text--light: #111;
-    --text--dark: #999;
+    --text--dark: #efefef;
 
 
   /* botones */
@@ -49,8 +49,7 @@ html,body{
     scroll-behavior: smooth;
     overflow-x: hidden;
     transition: background 0.1s linear;
-    color: light-dark(var(--text--light), var(--text--dark));
-    background-color: var(--background-dark)
+    background-color: light-dark(( var(--background-light), var(--background-dark)));
 }
 
 
@@ -62,7 +61,7 @@ strong{
 
 section{
   width: 100%;
-  max-width: 425px;
+  max-width: 480px;
   height: auto;
   margin: 5.6rem auto;
   border: .016rem solid var(--primary);
@@ -120,7 +119,7 @@ img{
 
 
 a{
-    font-family: "Open Sans", sans-serif;
+ font-family: "Poppins", sans-serif;
     font-size: var(--p);
     font-weight: 800;
     display: flex;
@@ -133,7 +132,8 @@ a{
     border-radius: 1.6rem;
     transition: .5s;
     margin: 0 auto;
-      cursor: pointer;
+    cursor: pointer;
+    color: light-dark ( (var(--text--light),var(--text--dark) ));
 }
 
 
@@ -157,7 +157,7 @@ a{
 
 
 .cta-button:hover{
-  background-color: var(--primary);
+  background-color: light-dark( ( var(--background-dark),var(--background-light) ) );
   border: .1rem solid var(--secondary);
   cursor: pointer;
 }
@@ -169,10 +169,10 @@ a{
   min-width:96px;
   height: auto;
   background-color: transparent;
-  color: var(--cuaternary);
+  color: light-dark( (var(--text--light),var(--text--dark)));
   border: none;
   font-weight: 500;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .contact-me{
@@ -198,7 +198,7 @@ transition: .85s;
 
 header{
   width: 100%;
-  max-width: 425px;
+  max-width: 480px;
   height: auto;
   margin: 4rem auto;
   border: .016rem solid var(--primary);
@@ -218,13 +218,16 @@ min-width: 64px;
 max-width: 80px;
 height: auto;
 padding: .8rem;
+background-color: var(--primary);
+border-radius: 9999px;
+margin: .8rem;
 }
 
 .header--description{
   width: 100%;
   height: auto;
   padding-top: .8rem;
-  color: var(--cuaternary);
+  color: light-dark(var(--text--light),var(--text--dark));
 }
 
 .header--subtitle{
@@ -238,7 +241,7 @@ color: var(--secondary);
   padding: .8rem 2.4rem;
   border: .080rem solid var(--tertiary);
   border-radius: 3.2rem;
-  background-color: #1c1c1c;
+  color: light-dark(var(--text--light),var(--text--dark));
 }
 
 nav{
@@ -275,18 +278,6 @@ height: auto;
 }
 
 
-.project--section{
-  display: flex;
-  flex-direction: row;
-  gap: 10rem;
-  align-items:center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  padding: .8rem;
-  color: rgba(255, 255, 255, .666);
-}
-
 /* secciones separadas y con colores */
 
 .nav--navbar{
@@ -296,10 +287,11 @@ height: auto;
 .button--up{
   background-color: transparent;
   border-radius: 99999rem;
-  border: solid .333rem var(--primary);
+  border: solid .16rem var(--primary);
   margin: 1.6rem auto;
   padding: .4rem;
   cursor: pointer;
+  background-color: var(--background-dark);
 }
 
 .button--up img{
@@ -317,6 +309,7 @@ height: auto;
 display: flex;
 flex-direction: row;
 width: 100%;
+max-width: 480px;
 height: auto;
 scroll-behavior: smooth;
 overflow-x: scroll;
@@ -324,13 +317,13 @@ gap: 1.6rem;
 }
 
 .services--card{
-  width: 600px;
+  width: 640px;
   height: auto;
   padding: .8rem 3.2rem;
-background: linear-gradient(45deg, oklab(22.344% 0.01919 -0.03416 / 0.668) 0%, oklab(21.519% 0.01254 -0.01643 / 0.666) 30%, oklab(20.1% 0.01183 -0.01283 / 0.6) 100%);
   border-radius: 1.6rem;
   margin: 1.6rem auto;
   border: .08rem solid var(--primary);
+      background-color: light-dark(( var(--background-light), var(--background-dark)));
   backdrop-filter: blur(24px);
 }
 
@@ -348,7 +341,7 @@ height: auto;
 text-align: left;
 padding-top: 4rem;
 padding-bottom: 4rem;
-color: var(--cuaternary);
+color: light-dark(var(--text--light),var(--text--dark));
 }
 
 .services--card--icon{
@@ -408,6 +401,7 @@ color:var(--tertiary);
 display:flex;
 flex-direction: column;
 width: 100%;
+max-width: 480px;
 min-width: 320px;
 height: auto;
 }
