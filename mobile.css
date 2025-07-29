@@ -133,11 +133,12 @@ a{
     border-radius: 1.6rem;
     transition: .5s;
     margin: 0 auto;
+      cursor: pointer;
 }
 
 
 .cta-button{
-    font-family: "Open Sans", sans-serif;
+   font-family: "Poppins", sans-serif;
     font-size: var(--p);
     font-weight: 800;
     display: flex;
@@ -151,7 +152,16 @@ a{
     border-radius: 1.6rem;
     transition: .5s;
     margin: 1.6rem auto;
+    cursor: pointer;
 }
+
+
+.cta-button:hover{
+  background-color: var(--primary);
+  border: .1rem solid var(--secondary);
+  cursor: pointer;
+}
+
 
 
 .nav--logo{
@@ -162,6 +172,7 @@ a{
   color: #fff;
   border: none;
   font-weight: 500;
+    cursor: pointer;
 }
 
 .contact-me{
@@ -170,6 +181,7 @@ color: var(--text--light);
 padding: .8rem 1.6rem;
 border: none;
 border-radius: 1.6rem;
+    cursor: pointer;
 }
 
 .contact-me:hover{
@@ -286,6 +298,7 @@ height: auto;
   border: solid .333rem var(--primary);
   margin: 1.6rem auto;
   padding: .4rem;
+  cursor: pointer;
 }
 
 .button--up img{
@@ -317,6 +330,7 @@ background: linear-gradient(45deg, oklab(22.344% 0.01919 -0.03416 / 0.668) 0%, o
   border-radius: 1.6rem;
   margin: 1.6rem auto;
   border: .08rem solid var(--primary);
+  backdrop-filter: blur(24px);
 }
 
 .services--title--container{
@@ -418,6 +432,7 @@ height: auto;
   border: .1rem solid var(--primary);
   padding: 7.2rem;
   margin: 1.6rem auto;
+  backdrop-filter: blur(24px);
 }
 
 .pampa{
