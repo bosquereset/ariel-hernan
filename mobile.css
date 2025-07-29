@@ -181,7 +181,8 @@ color: var(--text--light);
 padding: .8rem 1.6rem;
 border: none;
 border-radius: 1.6rem;
-    cursor: pointer;
+cursor: pointer;
+transition: .85s;
 }
 
 .contact-me:hover{
@@ -190,7 +191,7 @@ color: var(--text--dark);
 padding: .8rem 1.6rem;
 border: .1rem solid var(--secondary);
 border-radius: 1.6rem;
-transition: .5s;
+transition: .85s;
 }
 
 /* navbar */
