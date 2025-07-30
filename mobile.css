@@ -4,8 +4,11 @@
 :root{
 
     color-scheme: light dark;
-    --background-dark:oklab(17.764% 0 -0.00002);
+    --background-dark:oklab(17.051% 0.00272 -0.00347);
     --background-light: oklab(90.53099999999999% 0.03222 -0.04691);
+
+    --componente-dark: oklch(17.273% 0.01746 307.301);
+    --componente-light:oklch(90.06% 0.0001 271.152) ;
 
     --primary: oklab(25.197000000000003% 0 -0.00003);
     --secondary: oklab(51.028% 0 -0.00006);
@@ -71,6 +74,7 @@ section{
   margin: 5.6rem auto;
   border: .016rem solid var(--primary);
   border-radius: var(--rounded);
+    padding: .8rem;
 }
 
 
@@ -211,6 +215,8 @@ header{
   margin: 4rem auto;
   border: .016rem solid var(--primary);
   border-radius: var(--rounded);
+  background-color: var(--componente-dark);
+  padding: .8rem;
 }
 
 .header--datta{
@@ -226,7 +232,7 @@ min-width: 64px;
 max-width: 80px;
 height: auto;
 padding: .8rem;
-background-color: var(--primary);
+background-color: var(--componente-dark);
 border-radius: 9999px;
 margin: .8rem;
 }
@@ -332,7 +338,7 @@ gap: 1.6rem;
   border-radius: var(--rounded);
   margin: 1.6rem auto;
   border: .08rem solid var(--primary);
-  background-color: light-dark(( var(--background-light), var(--background-dark)));
+  background-color: light-dark( var(--componente-light), var(--componente-dark));
   backdrop-filter: blur(24px);
 }
 
@@ -414,6 +420,7 @@ width: 100%;
 max-width: 480px;
 min-width: 320px;
 height: auto;
+background-color: var(--componente-dark);
 }
 
 
