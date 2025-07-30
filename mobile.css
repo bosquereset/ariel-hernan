@@ -342,6 +342,7 @@ flex-direction: row;
 padding-bottom: 4.8rem;
 align-items: center;
 justify-content: center;
+margin: 0 auto;
 }
 
 .services--card--title{
